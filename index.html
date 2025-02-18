@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Camellia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+    </style>
+</head>
+<body>
+    <section class="home">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <h1>Camellia</h1>
+                </div>
+                <div class="navbar">
+                    <nav>
+                        <a href="#home">Home</a>
+                        <a href="#about">abouts</a>
+                        <a href="#contacts">Contacts</a>
+                    </nav>
+                </div>
+                <div class="btn">
+                    <input type="button" value="Register" id="registerBtn">
+                    <input type="button" value="Login" id="loginBtn">
+                </div>
+            </div>
+        </div>
+        <center>
+        <div class="page">
+             <h1>welcome to Cafe Camellia, </h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore saepe at officia quisquam asperiores ducimus maiores iure placeat cumque inventore, quas labore ad fugiat corporis harum, impedit amet maxime cupiditate.</p>
+        </div></center>
+    </section>
+
+    <section id="about">
+            <h1>About Us</h1>
+           
+
+            <div class="paragraph">
+                <img src="images/5.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus eius molestias corrupti corporis omnis quibusdam tenetur facilis at! Ratione officiis dignissimos laboriosam deleniti quisquam, vitae repudiandae iusto animi asperiores?
+
+                </p>
+            </div>
+            <div class="paragraph">
+                <img src="images/6.jpg.crdownload" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus eius molestias corrupti corporis omnis quibusdam tenetur facilis at! Ratione officiis dignissimos laboriosam deleniti quisquam, vitae repudiandae iusto animi asperiores?
+
+                </p>
+               
+            </div>
+            <div class="paragraph">
+                <img src="images/4.jpg.crdownload" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus eius molestias corrupti corporis omnis quibusdam tenetur facilis at! Ratione officiis dignissimos laboriosam deleniti quisquam, vitae repudiandae iusto animi asperiores?
+
+                </p>
+    </section>
+
+    <section id="contacts">
+        <h1>Contact us</h1>
+
+        <form action="message.php" method="post">
+            <input type="text" name="fullname" placeholder="Enter Full name">
+     <input type="email" name="email" placeholder="Email">
+     <textarea name="message" placeholder="Messeging Here..."></textarea>
+               <button>Sending</button>
+        </form>
+    </section>
+
+    <section id="footer">
+        <footer>&copy;Copyright 2025</footer>
+    </section>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Register</h2>
+            <form action="register.php" method="POST">
+                <input type="text" name="username" placeholder="Enter Username" required><br><br>
+                <input type="password" name="password" placeholder="Enter Password" required><br><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Enter Username" required><br><br>
+            <input type="password" name="password" placeholder="Enter Password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+        
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
